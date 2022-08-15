@@ -1,0 +1,162 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Silkscreen', cursive;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    cursor: pointer;
+    position: relative;
+}
+
+.tile {
+    color: deepskyblue;
+    font-size: 2em;
+    display: flex;
+    /* Centers the mark on desired tile. */
+    justify-content: center;
+    align-items: center;
+}
+
+.right-border {
+    border-right: 0.2em solid deeppink;
+}
+
+.bottom-border {
+    border-bottom: 0.2em solid deeppink;
+}
+
+.strike {
+    position: absolute;
+    background-color: deeppink;
+}
+
+.strike-row-1 {
+    width: 100%;
+    height: 4px;
+    top: 15%;
+}
+
+.strike-row-2 {
+    width: 100%;
+    height: 4px;
+    top: 48%;
+
+}
+
+.strike-row-3 {
+    width: 100%;
+    height: 4px;
+    top: 83%;
+
+}
+
+.strike-column-1 {
+    height: 100%;
+    width: 4px;
+    left: 15%;
+}
+
+.strike-column-2 {
+    height: 100%;
+    width: 4px;
+    left: 48%;
+}
+
+.strike-column-3 {
+    height: 100%;
+    width: 4px;
+    left: 83%;
+}
+
+.strike-diagonal-1 {
+    width: 90%;
+    height: 4px;
+    top: 50%;
+    left: 5%;
+    transform: skewY(45deg);
+}
+
+.strike-diagonal-2 {
+    width: 90%;
+    height: 4px;
+    top: 50%;
+    left: 5%;
+    transform: skewY(-45deg);
+}
+
+h1 {
+    color: deepskyblue;
+}
+
+#game-over-area {
+    text-align: center;
+    border: deeppink 8px solid;
+    padding: 50px;
+    width: 50%;
+    margin-top: 50px;
+
+}
+
+h2 {
+    color: deepskyblue;
+    font-size: 2em;
+    margin-top: 0px;
+}
+
+button {
+    background-color: transparent;
+    color: deeppink;
+    border: deeppink 1px solid;
+    padding: 10px;
+    font-size: 1.5em;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Silkscreen', cursive;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+/* Design aspect for player mark HOVERING; filling tile with HTML (X / O) */
+.x-hover:hover::after {
+    content: "X";
+    opacity: 0.5;
+}
+
+.o-hover:hover::after {
+    content: "O";
+    opacity: 0.5;
+}
+
+.Credits {
+    color: deepskyblue;
+    position: fixed;
+    bottom: 0;
+}
+.P1{
+    color: deeppink;
+}
+.P2{
+    color: deepskyblue;
+}
+.P3{
+    color: deeppink;
+}
+
+.Thanks{
+    color: white;
+    position: fixed;
+    bottom: 5px;
+}

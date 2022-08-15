@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Silkscreen&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="icon" 
+    href="./images/android-chrome-192x192.png" 
+    type="image/x-icon"/>
+    <!-- <script src="./index.js"></script> -->
+    <title>Tic-Tac-Toe Game by Alon Itzhaky</title>
+  </head>
+
+  <body>
+    <h1 class="animate__animated animate__bounceInDown">
+      Welcome to Tic-Tac-Toe!
+    </h1>
+    <br>
+    <!-- Tiles inside of the board -->
+    <div id="board">
+      <div data-index="1" class="x-hover tile right-border bottom-border"></div>
+      <div data-index="2" class="o-hover tile right-border bottom-border"></div>
+      <div data-index="3" class="tile bottom-border"></div>
+      <div data-index="4" class="tile right-border bottom-border"></div>
+      <div data-index="5" class="tile right-border bottom-border"></div>
+      <div data-index="6" class="tile bottom-border"></div>
+      <div data-index="7" class="tile right-border"></div>
+      <div data-index="8" class="tile right-border"></div>
+      <div data-index="9" class="tile"></div>
+      <div id="strike" class="strike"></div>
+    </div>
+    <!-- Bottom section of page - Winner & Restart Button -->
+    <br><br>
+    <div id="game-over-area" class="hidden">
+      <h2 id="game-over-text">Winner is X.</h2>
+      <button id="play-again">Play Again?</button>
+    </div>
+    <p class="Thanks">Thanks for playing!</p>
+    <nav class="Credits">&#169
+        <span class="P1">Alon</span>
+        <span class="P2">Itzhaky</span>
+        <span class="P3">2022</span>
+    </nav>
+    <script src="./index.js"></script>
+  </body>
+</html>
