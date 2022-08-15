@@ -1,4 +1,4 @@
-# TTTExplained
+# Tic-Tac-Toe Explained
 
 ![alt text](./images/cover.png)
 Welcome to my game.
