@@ -13,7 +13,7 @@ const strike = document.getElementById("strike");
 const gameOverArea = document.getElementById("game-over-area");
 const gameOverText = document.getElementById("game-over-text");
 const playAgain = document.getElementById("play-again");
-playAgain.addEventListener("click" , startNewGame)
+playAgain.addEventListener("click", startNewGame)
 
 // Adding an EventListener (purpose = registering marks on the board.)
 tiles.forEach(tile => tile.addEventListener("click", tileClick));
@@ -105,11 +105,11 @@ function gameOverScreen(winnerText) {
     gameOverText.innerText = text; // Shows proper text in victory / draw.
 }
 
-function startNewGame(){ // Play Again Button
+function startNewGame() { // Play Again Button
     strike.className = "strike";
     gameOverArea.className = "hidden"; // Changes winner sections attribute to hidden.
     boardState.fill(null); // Fills entire board with empty spaces.
-    tiles.forEach((tile=>tile.innerText = "")) // Resets all selections on entire board; "" = empty
+    tiles.forEach((tile => tile.innerText = "")) // Resets all selections on entire board; "" = empty
     turn = PLAYER_X; // X will begin the next game.
     setHoverText();
 }
