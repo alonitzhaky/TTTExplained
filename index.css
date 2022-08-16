@@ -93,6 +93,7 @@ body {
 
 h1 {
     color: deepskyblue;
+    justify-content: center;
 }
 
 #game-over-area {
@@ -142,7 +143,7 @@ button {
 
 .Credits {
     color: deepskyblue;
-    position: fixed;
+
 }
 .P1{
     color: deeppink;
@@ -156,8 +157,6 @@ button {
 
 .Thanks{
     color: white;
+    bottom: 0;
     position: fixed;
-    bottom: 0%;
-    padding: 10px 10px 10px 10px;
-    height: 10px;
 }
