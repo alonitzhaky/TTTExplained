@@ -142,8 +142,7 @@ button {
 
 .Credits {
     color: deepskyblue;
-    position: absolute;
-    bottom: 0;
+    position: fixed;
 }
 .P1{
     color: deeppink;
@@ -157,6 +156,8 @@ button {
 
 .Thanks{
     color: white;
-    position: absolute;
-    bottom: 5px;
+    position: fixed;
+    bottom: 0%;
+    padding: 10px 10px 10px 10px;
+    height: 10px;
 }
